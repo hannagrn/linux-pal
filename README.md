@@ -1,5 +1,5 @@
 # linux-pal - Linux-palvelimet -kurssin repository
 
-##h0
+## h0
 
 Hei maailma!
