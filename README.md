@@ -1,2 +1,5 @@
 # linux-pal
-Repository for Linux server course web hosting
+
+## Linux-palvelimet kurssin repo
+
+Hei maailma!
