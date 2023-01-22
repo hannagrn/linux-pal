@@ -10,4 +10,4 @@ Hei maailma!
 
 ## h2
 
-[Kenraali Pingviini](https://github.com/hannagrn/linux-pal/blob/main/h2.md)
+[Komentaja Pingviini](https://github.com/hannagrn/linux-pal/blob/main/h2.md)
