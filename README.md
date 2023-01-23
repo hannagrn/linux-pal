@@ -4,8 +4,6 @@
 
 Kokoan tänne Haaga-Helian Linux-palvelimet -kurssilla tekemäni harjoitustehtävien dokumentaatiot.
 
-Hanna Gröndahl
-
 ## h0
 
 Hei maailma!
