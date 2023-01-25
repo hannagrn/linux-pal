@@ -1,0 +1,69 @@
+# H3 - Vapaus!
+
+## Järjestelmätiedot
+
+- Rauta: Asus Zenbook UX430UQ
+- Raudan OS: Windows 10 Home (22H2, 19045.2486 -versio)
+- Hypervisor: Oracle VM Virtual Box 7.0.4
+- Virtuaalikoneen OS: Debian GNU/Linux 11
+- Kernel: Linux 5.10.0-20-amd64
+
+## x) Vapaat ohjelmistot ja avoin lähdekoodi
+
+Vapaat ohjelmistot sisältävät GNU:n määritelmän mukaan neljä oleellista ominaisuutta eli vapautta. Ensimmäinen on vapaus käyttäjälle on vapaus suorittaa ohjelmaa haluamallaan tavalla mihin tahansa tarkoitukseen. Toiseksi käyttäjällä on vapaus tutkia sitä, miten ohjelmisto toimii ja muokata sitä. Kolmanneksi käyttäjä saa jakaa ohjelmistoa. Neljäntenä on vapaus jakaa käyttäjän muokkaamaa ohjelmistoa. Avoin lähdekoodi on edellytys vapaiden ohjelmistojen olemassaololle.
+
+Avoin lähdekoodi ei ole kuitenkaan tekijänoikeuksien vastainen liike, eli avoimen lähdekoodin liike ei pyri poistamaan tekijänoikeuksia sinänsä. Avoimen lähdekoodin ohjelmistoja voidaan myös hyödyntää kaupallisesti, ja niistä voidaan johtaa esimerkiksi tavaramerkkejä tai jopa patentteja.
+
+Avoimen lähdekoodin lisenssien välillä eräs keskeinen ero liittyy vastavuoroisuuteen (*reciprocity*). Copyleft-lisensoituja ohjelmistoja tulee jakaa eteenpäin (muokattunakin) samalla lisenssillä, kun taas ei-copyleft-lisensoituja ohjelmistoja voidaan liittää suljetun lähdekoodin ohjelmistoihin.
+
+### Lähteet
+
+GNU (s.a.). What is free software? *https://www.gnu.org/philosophy/free-sw.html* Luettu 25.1.2023.
+
+Välimäki, Mikko (2005). *The rise of open source licensing.* Helsinki: Turre Publishing.
+
+## a) Kolmen ohjelman lisenssit.
+
+Asensin [edellisessä kotitehtävässä](https://github.com/hannagrn/linux-pal/blob/main/h2.md) Linux-virtuaalikoneelleni kolme eri komentoriviohjelmaa. Ne olivat tekstipohjainen Lynx-selain, Gnuchess-šakkipeli ja Git-versionhallintaohjelma. Tarkastelin niiden lisenssejä.
+
+Gitin kohdalta etsin `man git` -komennolla johtolankoja siitä, mitä ohjelmisto itse sanoo lisensseistään. Manuaalin lopussa oli polkuja juurihakemistossa ja sen alihakemistoissa, joten etsin sieltä. Löysin lopulta 'copyright'-tiedoston '/usr/share/doc/git' -hakemistosta, jossa kerrottaan Gitin lisensseistä. Gitin kehityksessä on hyödynnetty muita vapaita ohjelmistoja, ja myös niiden lisenssit löytyy copyright-tiedostosta.
+
+(kuva)
+
+Tulkitsen lisenssiselostetta kuitenkin niin, että kokonaisuudessaan Git on lisensoitu GPL-2 -lisenssillä. Kyseessä on vapaa lisenssi. Perustan tämän siihen, että ylin hakemisto on lisensoitu kyseisellä lisenssillä.
+
+	Files: *
+	Copyright: © 2005-2020, Linus Torvalds and others.
+	License: GPL-2
+
+Sama tieto olisi löytynyt luonnollisesti [Gitin kotisivuilta](https://git-scm.com/about/free-and-open-source) selkokielisesti ilmaistuna.
+
+(kuva)
+
+Nettisivuilla muistutetaan GPL-2 -lisenssin ehdoista. Ohjelmisto on avoin, ja GPL-2 -lisenssi tarttuu siten, että siitä muokatut versiot käyttävät samaa lisenssiä. GPL-2 ei kuitenkaan juuri liity tavaramerkkioikeuteen, joten on huomioitavaa, että Git-sana ja Git-logot on suojattu tavaramerkillä.
+
+Intoni penkoa lisenssitietoja tuohon tapaan laantui Gitin jälkeen, joten Lynxin lisenssiä lähdin selvittämään ihan googlaamalla. Googlasin 'lynx browser license' ja sain päädyin sitä kautta Lynxin verkkosivuille ja sieltä aina [About-sivulle](https://lynx.invisible-island.net/lynx_help/about_lynx.html). Kyseisellä sivulla todetaan projektit, joiden tuloksista Lynx on johdettu. Lynxiä jaetaan GNU GPL-2 -lisenssillä.
+
+GNU Chessin lisenssitiedot löysin GNU:n sivuilta hakutoiminnon avulla. Löysin [GNU Chess 6.2.8](https://www.gnu.org/software/chess/manual/gnuchess.html) -manuaalin, jonka alusta löytyi tarvittavat tiedot. Overview-kappaleessa todetaan GNU Chessin olevan suojattu GNU GPL -lisenssillä. En ole varma tarkoittaako tämä sitä, että GNU Chess on aina suojattu version julkaisuajan tuoreimmalla GNU GPL -version lisenssillä. Tässä tapauksessa se tarkoittaisi GNU GPL:n kolmatta versiota.
+
+Tutkin asiaa lisää, ja GNU Chessin [esittelysivuilla](https://www.gnu.org/software/chess/) löytyi vielä täsmentävä maininta asiasta. GNU Chess on lisensoitu GPL v. 3 lisenssillä. Käyttäjä tai jakaja voi myös käyttää mahdollista myöhempää versiota. GNU GPL:n tuorein versio on juuri tuo 3.
+
+Kaikki asentamani sovellukset käyttävät siis GPL-lisenssin jotain versiota. GPL perustuu vahvasti vapaiden ohjelmistojen neljään vapauteen. GPL:n keskeinen tehtävä on suojella copyleft-oikeuksia, eli GPL-lisenssi niin sanotusti tarttuu ohjelmistoon. Kaikki ohjelmistosta muokatut versiot noudattavat samaa lisenssiä. Muuten kyseessä on tekijänoikeusrikkomus.
+
+Koska törmäsin kahteen eri käytössä olevaan GPL-versioon, selvitin hieman niiden eroja. [GNU:n pikaopas](https://www.gnu.org/licenses/quick-guide-gplv3.html) selventää joitain keskeisiä eroja. GNU GPL v. 3 käyttää esimerkiksi ymmärrettävempiä sanamuotoja, mutta se ei ole silti lopulta kovin erilainen lisenssi. Uusin versio vahvistaa yksilön oikeuksia koodata mitä haluaa ja levittää ohjelmiaan vastauksena esimerkiksi DRM:ää (datan suojaaminen muokkauksilta) vahvistamaan pyrkivälle EU:n tekijänoikeuspolitiikalle. Myös patentoinnilla tehtävää lisenssioikeuksien rajoittamista on estetty ja lisenssien välistä yhteensopivuutta selvennetty.
+
+### Lähteet
+
+Git (s.a.). About. *Git*. https://git-scm.com/about/free-and-open-source. Luettu 26.1.2023.
+
+GNU (s.a.). GNU Chess 6.2.8. *GNU*. https://www.gnu.org/software/chess/manual/gnuchess.html. Luettu 26.1.2023.
+
+GNU (2021). GNU Chess. *GNU*. https://www.gnu.org/software/chess/. Luettu 26.1.2023.
+
+GNU (2022). A quick guide to GPLv3. *GNU.* https://www.gnu.org/licenses/quick-guide-gplv3.html. Luettu 26.1.2023.
+
+Lynx (s.a.). About Lynx. *GNU*. https://lynx.invisible-island.net/lynx_help/about_lynx.html. Luettu 26.1.2023.
+
+## b) Säännöllistä
+
+Olin viime kerralla hädin tuskin ymmärtänyt grepin käyttöä enkä ole myöskään kovin innostunut koodaamisesta, joten itselleni melko tuntemattoman regexin käyttö grepillä hieman hirvitti. Regex on minulle käsitteenä tuttu vain [r/ProgrammerHumorin](https://www.reddit.com/r/ProgrammerHumor/) minulle ehdottelemista [meemeistä](https://i.imgur.com/k53Z290.jpg), jotka eivät anna regexistä kovin mairittelevaa kuvaa. 
