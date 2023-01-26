@@ -17,3 +17,7 @@ Hei maailma!
 ## h2
 
 [Komentaja Pingviini](https://github.com/hannagrn/linux-pal/blob/main/h2.md)
+
+## h3
+
+[Vapaus!](https://github.com/hannagrn/linux-pal/blob/main/h3.md)
