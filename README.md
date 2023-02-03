@@ -1,10 +1,10 @@
 # linux-pal - Linux-palvelimet -kurssin repository
 
+Hanna Gröndahl
+
 ## Repositoryn tarkoitus
 
-Läksyt pitää tehdä.
-
-Kokoan tänne Haaga-Helian Linux-palvelimet -kurssilla tekemäni harjoitustehtävien dokumentaatiot.
+Läksyt pitää tehdä. Kokoan tänne Haaga-Helian Linux-palvelimet -kurssilla tekemäni harjoitustehtävien dokumentaatiot.
 
 ## h0
 
