@@ -30,3 +30,14 @@ Hei maailma!
 
 [Hello Web](https://github.com/hannagrn/linux-pal/blob/main/h5.md)
 
+## h6
+
+[Based](https://github.com/hannagrn/linux-pal/blob/main/h6.md)
+
+## h7
+
+[Real Internet(tm)](https://github.com/hannagrn/linux-pal/blob/main/h7.md)
+
+## h8
+
+[Say my name](https://github.com/hannagrn/linux-pal/blob/main/h8.md)
