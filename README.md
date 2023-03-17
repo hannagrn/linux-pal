@@ -61,3 +61,7 @@ Hei maailma!
 ## h13
 
 [Hello World!](https://github.com/hannagrn/linux-pal/blob/main/h13.md)
+
+## h14
+
+[Uusi komento](https://github.com/hannagrn/linux-pal/blob/main/h14.md)
